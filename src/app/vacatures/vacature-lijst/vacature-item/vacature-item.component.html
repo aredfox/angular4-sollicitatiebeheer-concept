@@ -1,0 +1,17 @@
+<a href="#" class="list-group-item clearfix" title="{{vacature.omschrijving}}">
+    <div class="clearfix">
+        <h4 class="list-group-item-heading pull-left">{{vacature.functie}}</h4>
+        <p class="pull-right">{{vacature.afdeling}}</p>
+    </div>
+    <div>
+        <p class="list-group-item-text">{{vacature.omschrijving | slice:0:maximumLengteOmschrijving}}{{vacature.omschrijving.length > maximumLengteOmschrijving
+            ? '...' : ''}}</p>
+    </div>
+    <span class="pull-left" style="padding-top: 10px;">
+        <span class="list-group-item-text">Nummer VDAB: {{vacature.nummer}}</span>
+    </span>
+    <span class="pull-right" style="padding-top: 10px;">
+        <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil "></span> Bewerken</button>
+    <button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash "></span> Verwijderen</button>
+    </span>
+</a>

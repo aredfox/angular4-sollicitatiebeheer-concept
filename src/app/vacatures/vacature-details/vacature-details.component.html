@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div *ngIf="!vacature" class="panel panel-default">
+      <div class="panel-heading">
+        <span class="pull-right" style="margin-top: 7px;">          
+        </span>
+        <h4>Geen vacature geselecteerd.</h4>
+      </div>
+      <div class="panel-body">
+        Geen vacature geselecteerd. Kies een vacature uit de lijst om de details te bekijken.
+      </div>
+    </div>
+    <div *ngIf="vacature" class="panel panel-default">
+      <div class="panel-heading">
+        <span class="pull-right" style="margin-top: 7px;">
+          <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil "></span></button>
+        <button class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash "></span></button>
+        </span>
+        <h4>{{vacature.functie}} <span class="text-muted" style="padding-left: 4px">{{vacature.nummer}}</span></h4>
+      </div>
+      <div class="panel-body">
+        <p>{{vacature.omschrijving}}</p>
+      </div>
+    </div>
+  </div>
+</div>

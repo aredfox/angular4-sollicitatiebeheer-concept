@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-vacature-lijst [vacatures]="vacatures" (vacatureGeselecteerd)="onVacatureGeselecteerd($event)"></app-vacature-lijst>
+  </div>
+  <div class="col-md-7">
+    <app-vacature-details [vacature]="geselecteerdeVacature"></app-vacature-details>
+  </div>
+</div>
